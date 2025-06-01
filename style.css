@@ -125,12 +125,14 @@ body{
 	background-image: url('gameover.png');
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 300px; /* важно */
-	padding: 60px 20px; /* добавляем отступы, чтобы текст был внутри картинки */
+	background-size: 300px;
+	padding: 60px 20px; 
 	height: auto;
-	width: 600px; /* задаем ширину */
+	width: 600px; 
 	box-sizing: border-box;
+	opacity: 0.5;
 }
+
 #start-screen {
 	position: absolute;
 	top: 0;
