@@ -20,7 +20,7 @@ let obstacleInterval;
 let kittyToggleInterval; // переменная для управления интервалом смены картинок
 let toggle = 1;      // переключатель картинок
 let lastToggle = 0;
-let kittySpeed = 400;
+let kittySpeed = 500;
 
 let backgrounds = [
   "url('background1.png')",
