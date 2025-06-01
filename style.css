@@ -1,0 +1,158 @@
+body{
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #222;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+#side-buttons {
+  position: absolute;
+  top: 180px;
+  right: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 10;
+}
+
+.circle-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  
+  color: #000;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+}
+
+.circle-button:hover {
+  transform: scale(1.1);
+}
+
+#day-button
+{
+	background-color: #70b7fa;
+}
+
+#evening-button
+{
+	background-color: #ff4901;
+}
+#night-button
+{
+	background-color: #1e1b42;
+}
+
+#game-modal {
+	background-color: white;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+	width: 800px;
+	height: 700px;
+}
+
+#game {
+	position: relative;
+	width: 100%;
+	height: 700px;
+	background-image: url("background1.png");
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}
+
+#ground {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 20px;
+	background-color: #555;
+}
+
+#kitty {
+	position: absolute;
+	bottom: 20px;
+	left: 50px;
+	width: 80px;
+	height: 80px;
+	background-image: url('kitty.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+.obstacle {
+	position: absolute;
+	bottom: 20px;
+	width: 30px;
+	height: 30px;
+	background-image: url('ogurec.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#score {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #ff5722;
+	border-radius: 20px;
+}
+
+#game-over {
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 15px;
+	font-weight: bold;
+	color: rgb(255, 255, 255);
+	display: none;
+	text-align: center;
+	background-image: url('gameover.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 300px; /* важно */
+	padding: 60px 20px; /* добавляем отступы, чтобы текст был внутри картинки */
+	height: auto;
+	width: 600px; /* задаем ширину */
+	box-sizing: border-box;
+}
+#start-screen {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	z-index: 10;
+}
+
+#start-button {
+	margin-top: 20px;
+	padding: 10px 20px;
+	font-size: 20px;
+	background-color: #ff5722;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	cursor: pointer;
+}
